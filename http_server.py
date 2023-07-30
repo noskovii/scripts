@@ -44,17 +44,17 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-b', '--bind', metavar='ADDRESS',
-                        help='Bind to this address '
+                        help='bind to this address '
                         '(default: all interfaces)')
     parser.add_argument('-d', '--directory', default=os.getcwd(),
-                        help='Serve this directory '
+                        help='serve this directory '
                         '(default: current directory)')
     parser.add_argument('-p', '--protocol', metavar='VERSION',
                         default='HTTP/1.1',
-                        help='Conform to this HTTP version '
+                        help='conform to this HTTP version '
                         '(default: %(default)s)')
     parser.add_argument('port', default=8000, type=int, nargs='?',
-                        help='Bind to this port '
+                        help='bind to this port '
                         '(default: %(default)s)')
     args = parser.parse_args()
 
